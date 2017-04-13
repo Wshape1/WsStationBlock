@@ -1,0 +1,33 @@
+[WsStationBlock]站立方块
+简单的说就是站在指定方块上面执行某个命令
+
+作者: Wshape1
+版本: 1.0.0
+Api: [2.0.0~3.0.0ALPHA4~4.0.0]
+
+指令: /wsblock
+
+ '@'是一个空格,'&'是换行,'%p'
+是玩家名字
+使用时不用加''
+
+例如: say@我是傻逼%p
+就会显示: 我是傻逼+你的名字
+
+配置:
+---//以下的Player是模拟玩家的名字
+cmdid://cmd站立方块的Id
+  Pos: 0-0-0-world //坐标x-y-z-level
+  Type: cmd //站立方块类型,不要乱搞
+  Cmd: say@Hi@%p //执行指令,例子输出: Hi Player
+  Op: false //如果为true,玩家可以越权限使用
+msgid: //msg类型站立方块Id
+  Pos: 0-0-0-world //坐标
+  Type: msg //站立方块类型
+  Msg: 哒@%p@哒 //例子发送信息:哒 Player 哒
+  MsgType: message //发送信息类型,有message,tip,popup
+...
+
+写得不好请见谅!
+如有bug请发邮箱:wuxing233@qq.com
+请注明标题是哪个插件的bug
